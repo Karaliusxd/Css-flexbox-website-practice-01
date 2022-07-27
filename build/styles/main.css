@@ -1,2 +1,2 @@
-*{box-sizing:border-box;margin:0;padding:0}
+:root{--main-color:#44a5ff;--bg-color:#222;--hyperlink-color:#fcff52;--white:#fff}html{box-sizing:border-box;font-size:100%}body{margin:0;padding:0}h1,h2,h3,h4,h5{margin-top:0}a,a:active,a:visited{text-decoration:none}
 /*# sourceMappingURL=main.css.map */
