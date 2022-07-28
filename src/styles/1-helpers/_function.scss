@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 // Source: https://css-tricks.com/snippets/sass/px-to-em-functions/
 @function rem($pixels, $context: 16) {
 	@return (math.div($pixels, $context)) * 1rem;
@@ -11,4 +13,6 @@
 //This code is equivalent to the ff code
 /* h1{
   font-size: 1.875rem;
-} */
+}   
+*/
+
