@@ -1,0 +1,59 @@
+.home{
+  margin-bottom: em(400);
+  &__container{
+    @include breakpoint-down(small){
+      position: relative;
+  
+    }
+  }
+  &__svg__mobile{
+    @include breakpoint-down(small){
+      position: absolute;
+      width: 100%;
+      height: auto;
+      margin-top: em(250);
+      overflow: visible;
+    }
+    @include breakpoint(medium){
+      display: none;
+    }
+  }
+  &__svg__desktop{
+    @include breakpoint-down(small){
+      position: absolute;
+      width: 100%;
+      height: auto;
+      margin-top: em(250);
+      overflow: visible;
+      display: none;
+    }
+  }
+
+  &__text{
+    @include breakpoint-down(small){
+      margin: em(0) em(30);
+      text-align: center;
+    }
+  }
+  &__title{
+    @include breakpoint-down(small){
+      position: relative;
+      font-size: $title-mobile-L;
+      color: var(--white);
+      margin-bottom: em(27);
+      margin-top: em(20);
+    }
+
+  }
+  &__description{
+    @include breakpoint-down(small){
+      position: relative;
+      font-size: $description-mobile-M;
+      color: var(--white);
+
+      a{
+        color: var(--hyperlink-color);
+      }
+    }
+  }
+}

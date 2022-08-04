@@ -7,10 +7,177 @@
     <!-- Css/Scss directory -->
     <link rel="stylesheet" href="/build/styles/main.css">
     <title>Practice</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1 class="text">Hello World</h1>
-    <a href="#">sample</a>
+    <nav class="nav">
+      <a href="#" class="nav__menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+        <ul class="nav__links">
+          <li class="nav__items" style="order: 1;
+          align-self: center;">
+            <a class="nav__text" href="#">HOME</a>
+          </li>
+          <li class="nav__items" style="order: 2;
+          align-self: center;">
+            <a class="nav__text" href="#">CONTENTS</a>
+          </li>
+          <li class="nav__items"style="order: 4;
+          align-self: center;">
+            <a class="nav__text" href="#">REVIEW</a>
+          </li>
+          <li class="nav__items" style="order: 5;
+          align-self: center;">
+            <a class="nav__text" href="#">PRACTICE</a>
+          </li>
+          <img src="/build/img/css-navbarlogo.svg" alt="#" class="nav__items nav__logo" style="order: 3;">
+        </ul>
+    </nav>
+    <section class="home">
+      <div class="home__container">
+        <svg class="home__svg__desktop" width="550" height="524" viewBox="0 0 550 524" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+          <circle class="home__circle" cx="270" cy="187" r="150" fill="#44A5FF"/>
+          <circle class="home__circle" cx="270" cy="180" r="180" fill="#54ACFF" fill-opacity="0.1"/>
+          <rect class="home__rect" x="70" y="195" width="400" height="329" fill="#222222"/>
+          <g filter="url(#filter0_f_19_140)">
+          <ellipse class="home__ellipse" cx="275" cy="229.5" rx="155" ry="62.5" fill="#44A5FF"/>
+          </g>
+          <defs>
+          <filter id="filter0_f_19_140" x="0" y="47" width="550" height="365" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+          <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_19_140"/>
+          </filter>
+          </defs>
+        </svg>
+        <svg class="home__svg__mobile" width="360" height="529" viewBox="0 0 360 529" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="180.002" cy="195" r="150" fill="#44A5FF"/>
+          <circle cx="180" cy="180" r="180" fill="#54ACFF" fill-opacity="0.1"/>
+          <rect y="200" width="360" height="200" fill="#222222"/>
+          <g filter="url(#filter0_f_41_34)">
+          <ellipse cx="185.002" cy="220" rx="155" ry="20" fill="#44A5FF"/>
+          </g>
+          <defs>
+          <filter id="filter0_f_41_34" x="-89.998" y="55" width="550" height="365" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+          <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_41_34"/>
+          </filter>
+          </defs>
+          </svg>
+          
+        <div class="home__text">
+          <h1 class="home__title">CSS FLEXBOX</h1>
+          <p class="home__description">The website contains information about the different codes used in flexbox, and how they function as a whole. There are also <a href="#">practice page</a> where the user can edit code via code editor (preferred vs code) and <a href="#">review page</a> where the user can recall the variety of codes that is present on flexbox.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="content">
+      <div class="content__text">
+        <h1 class="content__title">TABLE OF CONTENTS</h1>
+        <p class="content__description">This page contains different sections on what can you learn about flexbox, such as learning how to align items, how to set up flexbox containers and so much more.</p>
+        <h2 class="content__table__title">LOREM IPSUM</h2>
+        <p class="content__table__description">Lorem ipsum dolor sit amet, consectetur.</p>
+        <p class="content__table__description">Lorem ipsum dolor sit amet, consectetur.</p>
+        <p class="content__table__description">Lorem ipsum dolor sit amet, consectetur.</p>
+        <h2 class="content__table__title">LOREM IPSUM</h2>
+        <p class="content__table__description">Lorem ipsum dolor sit amet, consectetur.</p>
+        <p class="content__table__description">Lorem ipsum dolor sit amet, consectetur.</p>
+        <p class="content__table__description">Lorem ipsum dolor sit amet, consectetur.</p>
+        <h2 class="content__table__title">LOREM IPSUM</h2>
+        <p class="content__table__description">Lorem ipsum dolor sit amet, consectetur.</p>
+        <p class="content__table__description">Lorem ipsum dolor sit amet, consectetur.</p>
+        <p class="content__table__description">Lorem ipsum dolor sit amet, consectetur.</p>
+      </div>
+    </section>
+
+    <section class="review">
+      <h1 class="review__title">SAMPLE TITLE</h1>
+      <p class="review__description">Align A -> D from row to column by using flexbox, <a href="#">click here</a> to view the correct position of the items</p>
+      <div class="review__template">
+        dropdown menu
+      </div>
+      <div class="review__card">
+        <div class="review__text">
+          <div class="review__sample">
+            <p class="review__sample__text">A</p>
+          </div>
+          <div class="review__sample">
+            <p class="review__sample__text">B</p>
+          </div>
+          <div class="review__sample">
+            <p class="review__sample__text">C</p>
+          </div>
+          <div class="review__sample">
+            <p class="review__sample__text">D</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="practice">
+      <h1 class="practice__title">SAMPLE TITLE</h1>
+      <p class="practice__description">Align A -> D from row to column by using flexbox, <a href="#">click here</a> to view the correct position of the items</p>
+      <div class="practice__template">
+        dropdown menu
+      </div>
+      <div class="practice__card">
+        <div class="practice__text">
+          <div class="practice__sample">
+            <p class="practice__sample__text">A</p>
+          </div>
+          <div class="practice__sample">
+            <p class="practice__sample__text">B</p>
+          </div>
+          <div class="practice__sample">
+            <p class="practice__sample__text">C</p>
+          </div>
+          <div class="practice__sample">
+            <p class="practice__sample__text">D</p>
+          </div>
+      </div>
+      <div class="practice__box">
+        <a href="#" class="practice__button">CHECK</a>
+        <a href="#" class="practice__button">RESET</a>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer__container">
+        <div class="footer__col">
+          <h1 class="footer__title">CONTACT</h1>
+          <ul class="footer__items">
+            <li class="footer__links">
+              <a class="footer__icons" href="#">Icon</a>
+              <a class="footer__icons" href="#">Icon</a>
+              <a class="footer__icons" href="#">Icon</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h1 class="footer__title">LINKS</h1>
+          <ul class="footer__items">
+            <li class="footer__links">
+              <a class="footer__text" href="#">HOMEPAGE</a>
+              <a class="footer__text" href="#">CONTENTS</a>
+              <a class="footer__text" href="#">REVIEW</a>
+              <a class="footer__text" href="#">PRACTICE</a>
+            </li>
+          </ul>
+        </div>
+
+          <h1 class="footer__title">EMAIL US</h1>
+      </div>
+    </section>
+
+
     <!-- JavaScripts -->
     <script src="/build/styles/main.css"></script>
   </body>

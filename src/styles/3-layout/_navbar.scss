@@ -1,3 +1,66 @@
-.text{
-  font-size: rem(96);
+.nav{
+
+  &__menu{
+    @include breakpoint-down(small){
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin-top: em(50);
+      margin-right: em(35);
+    }
+  }
+
+    span{
+    
+      @include breakpoint-down(small){
+      display: block;
+      width: 25px;
+      height: 4px;
+      background-color: var(--white);
+
+      &:not(:last-child){
+        margin-bottom: 5px;
+      }
+    }
+  }
+  
+
+  &__links{
+    @include breakpoint(medium){
+      margin: 0 em(308) 0 em(306);
+      display: flex;
+      padding: 0;
+      list-style: none;
+      justify-content: center;
+      align-items: baseline;
+    }
+    @include breakpoint-down(small){
+      display: none; // display flex
+      flex-direction: column;
+      list-style: none;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__logo{
+    @include breakpoint-down (small){
+      display: none;
+    }
+  }
+
+  &__items{
+    @include breakpoint(medium){
+      padding-right: em(200);
+    }
+    @include breakpoint-down(small){
+      padding: em(50) 0;
+    }
+  }
+  &__text{
+    color: var(--white);
+    font-size: $nav-titles;
+  }
 }
+

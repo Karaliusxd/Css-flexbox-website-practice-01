@@ -1,0 +1,38 @@
+.content{
+
+  &__text{
+    @include breakpoint-down(small){
+      margin: em(0) em(30);
+      text-align: center;
+    }
+  }
+    &__title{
+    @include breakpoint-down(small){
+      font-size: $title-mobile-M;
+      color: var(--main-color);
+      margin-bottom: em(0);
+      
+    }
+  }
+    &__description{
+    @include breakpoint-down(small){
+      font-size: $description-mobile-M;
+      margin-top: em(10);
+      margin-bottom: em(29);
+    }
+  }
+    &__table__title{
+      @include breakpoint-down(small){
+        font-size: $title-mobile-S;
+        text-align: left;
+        color: var(--main-color);
+        margin: em(10) 0;
+      }
+    }
+    &__table__description{
+      @include breakpoint-down(small){
+        font-size: $title-mobile-S;
+        text-align: left;
+      }
+    }
+}

@@ -1,0 +1,53 @@
+.review{
+  @include breakpoint-down(small){
+    margin: em(153) em(30) 0;
+  }
+  &__title{
+    @include breakpoint-down(small){
+      font-size: $title-mobile-M;
+      text-align: center;
+      color: var(--main-color);
+      margin-bottom: em(5);
+    }
+  }
+  &__description{
+    @include breakpoint-down(small){
+      font-size: $description-mobile-M;
+      text-align: center;
+      margin-bottom: em(15);
+
+      a{
+        color: var(--hyperlink-color);
+      }
+    }
+  }
+  &__template{
+    @include breakpoint-down(small){
+      text-align: center;
+      margin-bottom: em(25);
+    }
+  }
+  &__card{
+    @include breakpoint-down(small){
+      height: em(280);
+    }
+  }
+  &__text{
+    @include breakpoint-down(small){
+      font-size: $sample-mobile;
+      padding: em(15);
+    }
+  }
+  &__sample{
+    @include breakpoint-down(small){
+      margin-bottom: em(10);
+      background-color: var(--main-color);
+      width: 50px;
+    }
+  }
+  &__sample__text{
+    @include breakpoint-down(small){
+      text-align: center;
+    }
+  }
+}

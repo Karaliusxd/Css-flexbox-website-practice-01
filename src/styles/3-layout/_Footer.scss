@@ -1,0 +1,30 @@
+.footer{
+  @include breakpoint-down(small){
+    background-color: var(--footer-color);
+    height: em(200);
+  }
+
+  &__container{
+    @include breakpoint-down(small){
+      margin: em(0) em(30);
+    }
+  }
+  &__col{
+    @include breakpoint-down(small){
+      display: grid;
+    }
+  }
+  
+  &__title{
+    @include breakpoint-down(small){
+      color: var(--main-color);
+      font-size: $footer-mobile;
+      margin-bottom: em(10);
+    }
+  }
+  &__description{
+    @include breakpoint-down(small){
+      
+    }
+  }
+}
